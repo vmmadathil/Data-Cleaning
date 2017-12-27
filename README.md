@@ -1,2 +1,7 @@
-A basic repository to store my commonly used scripts for data cleaning and preprocessing
---> DataPreProcess.R - A very general script to preprocess data before common Machine Learning procedures. This script imports data from     an excel file, replaces missing values with "0", drops unneeded columns, and provides normalization functions.
+My commonly used scripts for Data Cleaning and Pre-Processing
+------------
+Repository Organization
+------------
+    ├── README.md          <- The top-level README.
+    ├── DataPreProcess.R   <- A very general script to preprocess data before common Machine Learning procedures.
+------------
