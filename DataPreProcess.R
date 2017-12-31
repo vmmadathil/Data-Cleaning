@@ -1,4 +1,6 @@
+
 '''
+
 Developed for Forust.io
 
 A very general script to preprocess data before common Machine Learning procedures.
@@ -13,13 +15,14 @@ library(readxl)
 mydata <- read_excel("file path")
 View(mydata)
 
-#custom function to replace NAN values
-is.nan.data.frame <- function(x)
-do.call(cbind, lapply(x, is.nan))
+#custom function for NAN replacement
+is.nan.data.frame <- function(x){
+  do.call(cbind, lapply(x, is.nan))
+}
 
-#replacing N/A and NAN values with 0
+#replacing N/A and NANvalues with 0
 mydata[is.na(mydata)] <- 0 
-mydata[is.nan(mydata)] <- 0
+mydata[is.nan(mydata)] <- 0 
 
 #Dropping unneeded columns (if needed)
 mydata$`Col Name` <- NULL
